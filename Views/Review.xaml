@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="PVEAPP.Views.Review"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PVEAPP.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <AppBarButton Click="back" Icon="Back" Height="50" Width="50" Margin="5,5,0,0"></AppBarButton>
+        <StackPanel Margin="60,20,0,0">
+            <StackPanel Orientation="Horizontal" Margin="10,20,20,20">
+                <TextBlock Margin="0,0,8,0" Text="今日待检测  " FontSize="20"></TextBlock>
+                <TextBlock FontSize="20" x:Name="num" Foreground="{ThemeResource AccentAAFillColorDefaultBrush}"></TextBlock>
+                <TextBlock Text=" 词 已生成" FontSize="20"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Click="ywxy" Margin="7" Width="120" Height="80" Content="英文选义"></Button>
+                <Button Margin="7" Width="120" Height="80" Content="中文选词"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="7" Width="120" Height="80" Content="语境识词"></Button>
+                <Button Margin="7" Width="120" Height="80" Content="拼写练习"></Button>
+            </StackPanel>
+            <Button Margin="5" Width="255" Height="80" Content="打印拼写检测卷"></Button>
+        </StackPanel>
+    </StackPanel>
+</Page>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PVEAPP (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "PVEAPP (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
